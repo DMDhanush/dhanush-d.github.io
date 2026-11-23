@@ -25,9 +25,9 @@ export const personalInfo: PersonalInfo = {
     { name: 'Kannada', level: 'Fluent' }
   ],
   availability: 'Open for Full-time Roles in Bengaluru / Hybrid',
-  resumePdfUrl: '/assets/resume/D_Dhanush_Resume.pdf',
-  profilePhoto: '/assets/profile/dhanush_profile.jpeg',
-  portraitPhoto: '/assets/profile/dhanush_portrait.jpg'
+  resumePdfUrl: './assets/resume/D_Dhanush_Resume.pdf',
+  profilePhoto: './assets/profile/dhanush_profile.jpeg',
+  portraitPhoto: './assets/profile/dhanush_portrait.jpg'
 };
 
 export const skillsList: SkillItem[] = [
@@ -209,8 +209,8 @@ export const flagshipCaseStudy: CaseStudy = {
   ],
   solutionOverview:
     'ResearchAI is an autonomous, agentic RAG platform engineered to ingest academic research papers, index them semantically, and orchestrate specialized agents. It provides structural 12-section paper summaries, 9-attribute multi-paper comparison matrices, automated research gap discovery, publication-grade literature reviews with APA citations, and high-precision conversational question-answering with verifiable source page citations.',
-  architectureDiagramUrl: '/assets/projects/researchai/architecture_layers.png',
-  useCaseDiagramUrl: '/assets/projects/researchai/usecase_modules.png',
+  architectureDiagramUrl: './assets/projects/researchai/architecture_layers.png',
+  useCaseDiagramUrl: './assets/projects/researchai/usecase_modules.png',
   features: [
     {
       title: 'Multi-Path Document Ingestion & Chunking',
@@ -325,161 +325,161 @@ export const flagshipCaseStudy: CaseStudy = {
       id: 's01',
       title: 'User Authentication & Secure Portal',
       category: 'Access & Auth',
-      path: '/assets/projects/researchai/01_Login_Page.png',
+      path: './assets/projects/researchai/01_Login_Page.png',
       description: 'Streamlit authentication interface enforcing session tokens and user-level document isolation.'
     },
     {
       id: 's02',
       title: 'Central Analytics & Corpus Dashboard',
       category: 'Dashboard',
-      path: '/assets/projects/researchai/02_Dashboard_Home_Page.png',
+      path: './assets/projects/researchai/02_Dashboard_Home_Page.png',
       description: 'Real-time telemetry showing total indexed papers, chunk counts, page statistics, and system health.'
     },
     {
       id: 's03',
       title: 'Multi-Path Document Upload & Ingestion',
       category: 'Ingestion',
-      path: '/assets/projects/researchai/03_Paper_Upload_Page.png',
+      path: './assets/projects/researchai/03_Paper_Upload_Page.png',
       description: 'Drag-and-drop PDF ingestion pipeline with automatic text extraction, chunking, and ChromaDB vector indexing.'
     },
     {
       id: 's04',
       title: 'Interactive Academic Paper Library',
       category: 'Library',
-      path: '/assets/projects/researchai/04_Uploaded_Papers_Library.png',
+      path: './assets/projects/researchai/04_Uploaded_Papers_Library.png',
       description: 'Corpus library displaying document metadata, upload timestamps, chunk distributions, and removal controls.'
     },
     {
       id: 's05',
       title: 'Research Insights & Corpus Analytics',
       category: 'Insights',
-      path: '/assets/projects/researchai/05_Research_Insight_Interface.png',
+      path: './assets/projects/researchai/05_Research_Insight_Interface.png',
       description: 'Exploratory analytics interface for extracting methodology trends, author keywords, and cross-paper topics.'
     },
     {
       id: 's06',
       title: 'Research Insights Configuration Options',
       category: 'Insights',
-      path: '/assets/projects/researchai/05a_Research_Insight_Options.png',
+      path: './assets/projects/researchai/05a_Research_Insight_Options.png',
       description: 'Fine-grained insight filters allowing researchers to target specific analytical lenses.'
     },
     {
       id: 's07',
       title: 'Insight Analysis Output — Methodology Breakdown',
       category: 'Insights',
-      path: '/assets/projects/researchai/05b_Research_Insight_Output_1.png',
+      path: './assets/projects/researchai/05b_Research_Insight_Output_1.png',
       description: 'Algorithmic extraction of empirical methodologies, sampling protocols, and experimental setups.'
     },
     {
       id: 's08',
       title: 'Insight Analysis Output — Dataset Overview',
       category: 'Insights',
-      path: '/assets/projects/researchai/05c_Research_Insight_Output_2.png',
+      path: './assets/projects/researchai/05c_Research_Insight_Output_2.png',
       description: 'Automated extraction of corpus sizes, benchmark datasets, and statistical distributions.'
     },
     {
       id: 's09',
       title: 'Insight Analysis Output — Synthesized Findings',
       category: 'Insights',
-      path: '/assets/projects/researchai/05d_Research_Insight_Output_3.png',
+      path: './assets/projects/researchai/05d_Research_Insight_Output_3.png',
       description: 'Structured synthesis of major discoveries and statistical outcomes across indexed literature.'
     },
     {
       id: 's10',
       title: '12-Section Structural Paper Summarizer',
       category: 'Summarizer',
-      path: '/assets/projects/researchai/06_Paper_Summarizer_Interface.png',
+      path: './assets/projects/researchai/06_Paper_Summarizer_Interface.png',
       description: 'Autonomous extraction module producing deep 12-section structured executive summaries for individual papers.'
     },
     {
       id: 's11',
       title: 'Summarizer Output — Core Architecture & Findings',
       category: 'Summarizer',
-      path: '/assets/projects/researchai/06a_Paper_Summarizer_Output_1.png',
+      path: './assets/projects/researchai/06a_Paper_Summarizer_Output_1.png',
       description: 'Generated structural breakdown of research objectives, mathematical models, and baseline comparisons.'
     },
     {
       id: 's12',
       title: 'Summarizer Output — Critical Limitations & Future Scope',
       category: 'Summarizer',
-      path: '/assets/projects/researchai/06b_Paper_Summarizer_Output_2.png',
+      path: './assets/projects/researchai/06b_Paper_Summarizer_Output_2.png',
       description: 'Extraction of documented constraints, dataset biases, and suggested future research directions.'
     },
     {
       id: 's13',
       title: 'Publication-Grade Literature Review Generator',
       category: 'Literature Review',
-      path: '/assets/projects/researchai/07_Literature_Review_Interface.png',
+      path: './assets/projects/researchai/07_Literature_Review_Interface.png',
       description: 'Generates cohesive academic literature reviews synthesizing multiple papers with APA citations.'
     },
     {
       id: 's14',
       title: 'Literature Review Synthesized Output with Citations',
       category: 'Literature Review',
-      path: '/assets/projects/researchai/07a_Literature_Review_Output.png',
+      path: './assets/projects/researchai/07a_Literature_Review_Output.png',
       description: 'Full multi-paragraph thematic review formatted for thesis inclusion with bibliography.'
     },
     {
       id: 's15',
       title: 'Multi-Paper Comparative Analysis Interface',
       category: 'Comparison',
-      path: '/assets/projects/researchai/08_Paper_Comparison_Interface.png',
+      path: './assets/projects/researchai/08_Paper_Comparison_Interface.png',
       description: 'Allows selecting 2 or more indexed papers to generate a 9-attribute side-by-side comparative matrix.'
     },
     {
       id: 's16',
       title: 'Comparative Matrix Output & Qualitative Synthesis',
       category: 'Comparison',
-      path: '/assets/projects/researchai/08a_Paper_Comparison_Output.png',
+      path: './assets/projects/researchai/08a_Paper_Comparison_Output.png',
       description: 'Side-by-side comparison table detailing objectives, methodologies, algorithms, results, and limitations.'
     },
     {
       id: 's17',
       title: 'Research Evaluation Interface',
       category: 'Evaluation',
-      path: '/assets/projects/researchai/09_Paper_Evaluation_Interface.png',
+      path: './assets/projects/researchai/09_Paper_Evaluation_Interface.png',
       description: 'Quantitative benchmark scoring interface assessing paper validity, methodology rigor, and reproducible metrics.'
     },
     {
       id: 's18',
       title: 'Evaluation Telemetry & Quality Metrics',
       category: 'Evaluation',
-      path: '/assets/projects/researchai/09a_Paper_Evaluation_Output.png',
+      path: './assets/projects/researchai/09a_Paper_Evaluation_Output.png',
       description: 'Detailed evaluation scores breaking down groundedness, technical novelty, and empirical depth.'
     },
     {
       id: 's19',
       title: 'Ask ResearchAI — Interactive Chatbot Interface',
       category: 'Q&A Chatbot',
-      path: '/assets/projects/researchai/10_Ask_ResearchAI_Chatbot.png',
+      path: './assets/projects/researchai/10_Ask_ResearchAI_Chatbot.png',
       description: 'Conversational assistant interface supporting natural language inquiries over specific or all papers.'
     },
     {
       id: 's20',
       title: 'Grounded Answer with Page-Level Citations',
       category: 'Q&A Chatbot',
-      path: '/assets/projects/researchai/11_Ask_ResearchAI_Response.png',
+      path: './assets/projects/researchai/11_Ask_ResearchAI_Response.png',
       description: 'Precision response demonstrating contextual grounding with exact page references and source quote snippets.'
     },
     {
       id: 's21',
       title: 'Core RAG Retrieval Diagnostics Interface',
       category: 'RAG Diagnostics',
-      path: '/assets/projects/researchai/12_RAG_System_Interface.png',
+      path: './assets/projects/researchai/12_RAG_System_Interface.png',
       description: 'Diagnostic workbench inspecting similarity scores, chunk embeddings, and top-k vector distances.'
     },
     {
       id: 's22',
       title: 'RAG Diagnostics Vector Inspection',
       category: 'RAG Diagnostics',
-      path: '/assets/projects/researchai/12a_RAG_System_Output_1.png',
+      path: './assets/projects/researchai/12a_RAG_System_Output_1.png',
       description: 'Detailed chunk metadata, token lengths, and cosine distance telemetry from ChromaDB.'
     },
     {
       id: 's23',
       title: 'Full RAG Evidence Breakdown',
       category: 'RAG Diagnostics',
-      path: '/assets/projects/researchai/12b_RAG_System_Output_2.png',
+      path: './assets/projects/researchai/12b_RAG_System_Output_2.png',
       description: 'Context verification telemetry confirming strict chunk alignment before LLM generation.'
     }
   ],
@@ -555,21 +555,21 @@ export const secondaryProjects: SecondaryProject[] = [
         id: 'sih-1',
         title: 'Secure Social Dashboard',
         category: 'UI',
-        path: '/assets/projects/fake_profile_detection/Screenshot 2024-04-08 181826.png',
+        path: './assets/projects/fake_profile_detection/Screenshot 2024-04-08 181826.png',
         description: 'Main scanning interface and profile risk scoring breakdown.'
       },
       {
         id: 'sih-2',
         title: 'Profile Analysis & Feature Extraction',
         category: 'Analysis',
-        path: '/assets/projects/fake_profile_detection/Screenshot 2024-04-08 181917.png',
+        path: './assets/projects/fake_profile_detection/Screenshot 2024-04-08 181917.png',
         description: 'Account feature analysis showing follower-to-following ratios and posting regularity.'
       },
       {
         id: 'sih-3',
         title: 'Face Detection Telemetry',
         category: 'Computer Vision',
-        path: '/assets/projects/fake_profile_detection/Screenshot 2024-04-08 182736.png',
+        path: './assets/projects/fake_profile_detection/Screenshot 2024-04-08 182736.png',
         description: 'Facial recognition output determining synthetic avatar vs genuine human portrait.'
       }
     ]
@@ -584,8 +584,8 @@ export const certificatesList: CertificateItem[] = [
     partnerOrg: 'IBMCE (IBM Career Education)',
     issueDate: 'Verified Credential',
     credentialId: 'CEPYTIIN',
-    previewImage: '/assets/certificates/python_fullstack_cert.png',
-    downloadPdf: '/assets/certificates/python_fullstack_cert.pdf',
+    previewImage: './assets/certificates/python_fullstack_cert.png',
+    downloadPdf: './assets/certificates/python_fullstack_cert.pdf',
     category: 'Python & AI',
     description:
       'Comprehensive full-stack development credential covering Python programming, Django, REST API architecture, and database integrations. Endorsed by Jagadisha Bhat (Country Manager - IBM Technology Expert Labs, ISA, IBM India Pvt Ltd).'
@@ -598,8 +598,8 @@ export const certificatesList: CertificateItem[] = [
     issueDate: 'Jul – Oct 2025',
     credentialId: 'NPTEL25CS107S352605578',
     scoreOrDetail: 'Consolidated Score: 53% (Online Assignments: 23.16/25, Proctored Exam: 30/75)',
-    previewImage: '/assets/certificates/nptel_cloud_computing.png',
-    downloadPdf: '/assets/certificates/nptel_cloud_computing.pdf',
+    previewImage: './assets/certificates/nptel_cloud_computing.png',
+    downloadPdf: './assets/certificates/nptel_cloud_computing.pdf',
     category: 'Cloud Computing',
     description:
       'Rigorous 12-week national certification course covering cloud architectures, virtualization, resource management, distributed storage, and cloud security coordinated by Prof. Haimanti Banerji (IIT Kharagpur). Recommended for 3 to 4 university credits.'
@@ -612,8 +612,8 @@ export const certificatesList: CertificateItem[] = [
     issueDate: 'July 10, 2025',
     credentialId: 'FCSWM6JC01C3',
     verificationUrl: 'https://coursera.org/verify/FCSWM6JC01C3',
-    previewImage: '/assets/certificates/aws_it_professionals.png',
-    downloadPdf: '/assets/certificates/aws_it_professionals.pdf',
+    previewImage: './assets/certificates/aws_it_professionals.png',
+    downloadPdf: './assets/certificates/aws_it_professionals.pdf',
     category: 'Cloud Computing',
     description:
       'Practical cloud computing specialization authorized directly by Amazon Web Services, taught by AWS Principal and Senior Cloud Technologists (Rafael Lopes, Alex Galvin, Oksana Hoeckele) focusing on AWS cloud infrastructure, security, and computing.'
@@ -625,8 +625,8 @@ export const certificatesList: CertificateItem[] = [
     issueDate: 'July 2022',
     credentialId: 'PCFZLUIU',
     verificationUrl: 'https://verify.mygreatlearning.com/PCFZLUIU',
-    previewImage: '/assets/certificates/great_learning_python.png',
-    downloadPdf: '/assets/certificates/great_learning_python.pdf',
+    previewImage: './assets/certificates/great_learning_python.png',
+    downloadPdf: './assets/certificates/great_learning_python.pdf',
     category: 'Python & AI',
     description:
       'Hands-on foundation course covering NumPy, Pandas, statistical analysis, data cleaning, and core exploratory data science techniques using Python.'
@@ -637,8 +637,8 @@ export const certificatesList: CertificateItem[] = [
     issuingOrg: 'TCS iON (Tata Consultancy Services)',
     issueDate: 'January 16, 2023',
     credentialId: '66785-23883209-1016',
-    previewImage: '/assets/certificates/tcs_email_etiquette.png',
-    downloadPdf: '/assets/certificates/tcs_email_etiquette.pdf',
+    previewImage: './assets/certificates/tcs_email_etiquette.png',
+    downloadPdf: './assets/certificates/tcs_email_etiquette.pdf',
     category: 'Professional Skills',
     description:
       'Corporate communication credential covering executive email formatting, tone of voice, professional case studies, and business correspondence standards issued by Mehul Mehta (Global Delivery Head - TCS iON).'
@@ -743,3 +743,4 @@ export const careerTimeline: TimelineMilestone[] = [
     tag: 'Flagship Engineering'
   }
 ];
+
