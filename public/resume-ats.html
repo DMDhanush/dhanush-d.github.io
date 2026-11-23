@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D Dhanush - ATS Resume</title>
+  <style>
+    /* Reset & Base Setup */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      color: #111827;
+      background-color: #f3f4f6;
+      font-size: 8.75pt;
+      line-height: 1.27;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Action Bar (Browser only) */
+    .action-bar {
+      max-width: 8.5in;
+      margin: 16px auto 10px auto;
+      padding: 10px 18px;
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .action-bar h2 {
+      font-size: 13pt;
+      font-weight: 700;
+    }
+
+    .action-btn {
+      background: #2563eb;
+      color: #ffffff;
+      border: none;
+      padding: 7px 16px;
+      font-size: 9.5pt;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .action-btn:hover {
+      background: #1d4ed8;
+    }
+
+    /* Page Canvas */
+    .resume-page {
+      width: 8.5in;
+      height: 11in;
+      max-height: 11in;
+      margin: 10px auto 25px auto;
+      background: #ffffff;
+      padding: 0.32in 0.48in;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 7px;
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 6px;
+    }
+
+    h1 {
+      font-size: 19pt;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: #0f172a;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .header-contact {
+      font-size: 8.75pt;
+      color: #334155;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .header-contact a {
+      color: #0f172a;
+      text-decoration: none;
+    }
+
+    .header-contact a:hover {
+      text-decoration: underline;
+      color: #2563eb;
+    }
+
+    .separator {
+      color: #64748b;
+      font-weight: 600;
+    }
+
+    /* Section Styling */
+    section {
+      margin-bottom: 5.5px;
+    }
+
+    .section-title {
+      font-size: 10pt;
+      font-weight: 800;
+      color: #1e3a8a;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 1.5px;
+      margin-bottom: 3.5px;
+    }
+
+    /* Career Summary */
+    .summary-text {
+      font-size: 8.65pt;
+      color: #1e293b;
+      line-height: 1.27;
+      text-align: justify;
+    }
+
+    /* Skills List */
+    .skills-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      font-size: 8.65pt;
+    }
+
+    .skill-row {
+      display: flex;
+      align-items: baseline;
+      line-height: 1.26;
+    }
+
+    .skill-label {
+      font-weight: 700;
+      color: #0f172a;
+      width: 165px;
+      flex-shrink: 0;
+    }
+
+    .skill-items {
+      color: #1e293b;
+      flex-grow: 1;
+    }
+
+    /* Project & Experience Items */
+    .item-block {
+      margin-bottom: 4.5px;
+    }
+
+    .item-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .item-title {
+      font-size: 8.95pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .item-tech {
+      font-size: 8.4pt;
+      font-weight: 600;
+      color: #1d4ed8;
+      font-style: italic;
+      margin-bottom: 1.5px;
+    }
+
+    .item-meta {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: #475569;
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    ul.bullet-list {
+      margin-left: 15px;
+      list-style-type: disc;
+    }
+
+    ul.bullet-list li {
+      font-size: 8.5pt;
+      color: #1e293b;
+      line-height: 1.25;
+      margin-bottom: 1px;
+    }
+
+    ul.bullet-list li strong {
+      color: #0f172a;
+    }
+
+    /* Certifications Grid */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px 14px;
+      font-size: 8.5pt;
+      line-height: 1.25;
+    }
+
+    .cert-item {
+      color: #1e293b;
+      display: flex;
+      align-items: baseline;
+    }
+
+    .cert-bullet {
+      margin-right: 5px;
+      color: #1d4ed8;
+      font-weight: bold;
+    }
+
+    /* Athletic / Additional */
+    .additional-info {
+      font-size: 8.5pt;
+      line-height: 1.25;
+      color: #1e293b;
+    }
+
+    /* Print / PDF Mode */
+    @media print {
+      body {
+        background-color: #ffffff;
+      }
+
+      .action-bar {
+        display: none !important;
+      }
+
+      .resume-page {
+        width: 100% !important;
+        height: 100% !important;
+        max-height: 100% !important;
+        margin: 0 !important;
+        padding: 0.28in 0.42in !important;
+        box-shadow: none !important;
+        border: none !important;
+        page-break-after: avoid !important;
+        page-break-inside: avoid !important;
+      }
+
+      @page {
+        size: letter portrait;
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none !important;
+        color: #0f172a !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating action bar for browser preview -->
+  <div class="action-bar">
+    <div>
+      <h2>D Dhanush — ATS-Optimized 1-Page Master Resume</h2>
+      <span style="font-size: 8.5pt; color: #94a3b8;">100% ATS Compliant • High Keyword Density • Single-Page Precision</span>
+    </div>
+    <div style="display: flex; gap: 8px;">
+      <button class="action-btn" onclick="window.print()">
+        🖨️ Print / Save as PDF
+      </button>
+    </div>
+  </div>
+
+  <!-- Single-Page ATS Resume Container -->
+  <div class="resume-page" id="resume">
+
+    <!-- Header Section -->
+    <header>
+      <h1>D Dhanush</h1>
+      <div class="header-contact">
+        <span>Bengaluru, Karnataka, India</span>
+        <span class="separator">|</span>
+        <span>+91 8884262043</span>
+        <span class="separator">|</span>
+        <a href="mailto:dhanushd627@gmail.com">dhanushd627@gmail.com</a>
+        <span class="separator">|</span>
+        <a href="https://linkedin.com/in/dhanush-d" target="_blank">linkedin.com/in/dhanush-d</a>
+        <span class="separator">|</span>
+        <a href="https://github.com/dhanush-d" target="_blank">github.com/dhanush-d</a>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <div class="section-title">Professional Summary</div>
+      <p class="summary-text">
+        High-performing <strong>Python &amp; Generative AI Developer</strong> and recent <strong>Master of Computer Applications (MCA, CGPA 7.37)</strong> graduate with strong competencies in <strong>Retrieval-Augmented Generation (RAG)</strong>, vector databases, and asynchronous backend microservices. Sole architect of <strong>ResearchAI</strong>, an academic intelligence platform powered by ChromaDB, SentenceTransformers, and multi-agent supervision that indexes, synthesizes, and queries literature with 100% verifiable citations. Industry-certified in <strong>Python Full Stack (IBM)</strong>, <strong>Cloud Computing (NPTEL/IIT Kharagpur)</strong>, and <strong>AWS Cloud Fundamentals</strong>. Combines disciplined problem-solving stamina from university-level wrestling with robust software engineering practices.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-grid">
+        <div class="skill-row">
+          <span class="skill-label">Programming Languages:</span>
+          <span class="skill-items"><strong>Python (3.12)</strong>, <strong>Java</strong>, <strong>SQL</strong>, JavaScript (ES6+), HTML5, CSS3, Bash / Shell Scripting</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Generative AI &amp; Retrieval:</span>
+          <span class="skill-items"><strong>Retrieval-Augmented Generation (RAG)</strong>, <strong>ChromaDB Vector Store</strong>, SentenceTransformers, Semantic Embeddings, OpenAI GPT-4o, Document Parsing (PyMuPDF), Prompt Engineering, Pydantic</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Backend &amp; Frameworks:</span>
+          <span class="skill-items"><strong>FastAPI</strong>, <strong>RESTful APIs</strong>, Streamlit, SQLite, SQLAlchemy ORM, Asynchronous Request Processing</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Machine Learning &amp; Data:</span>
+          <span class="skill-items">Convolutional Neural Networks (CNN), TensorFlow/Keras, Scikit-Learn, XGBoost, OpenCV, Pandas, NumPy</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Cloud &amp; Developer Tools:</span>
+          <span class="skill-items"><strong>AWS Cloud Fundamentals (EC2, S3, IAM)</strong>, <strong>Git</strong>, <strong>GitHub</strong>, PyTest (Unit Testing), Linux / CLI, VS Code</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section>
+      <div class="section-title">Education</div>
+      <div class="item-block">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Master of Computer Applications (MCA)</span>
+            <span style="color: #475569; font-size: 8.6pt;"> — Seshadripuram College, Bengaluru (Bengaluru City University)</span>
+          </div>
+          <span class="item-meta">2025 – 2026 | <strong>CGPA: 7.37 / 10.00</strong></span>
+        </div>
+      </div>
+      <div class="item-block">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Bachelor of Computer Applications (BCA)</span>
+            <span style="color: #475569; font-size: 8.6pt;"> — Seshadripuram Degree Main College, Bengaluru</span>
+          </div>
+          <span class="item-meta">2023 – 2024 | <strong>CGPA: 7.00 / 10.00</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Projects -->
+    <section>
+      <div class="section-title">Technical Projects</div>
+
+      <!-- Project 1 -->
+      <div class="item-block">
+        <div class="item-header">
+          <span class="item-title">ResearchAI — Academic Literature Intelligence Platform</span>
+          <span class="item-meta">MCA Major Project | 2025 – 2026</span>
+        </div>
+        <div class="item-tech">Technologies: Python 3.12, Streamlit, ChromaDB, SentenceTransformers, PyMuPDF, OpenAI GPT-4o, SQLite</div>
+        <ul class="bullet-list">
+          <li>Architected an autonomous <strong>agentic RAG platform</strong> that ingests dense multi-column PDFs via <strong>PyMuPDF</strong>, executes sliding-window chunking, and performs sub-second cosine vector search via <strong>ChromaDB</strong> and <strong>SentenceTransformers</strong>.</li>
+          <li>Engineered a <strong>multi-agent supervisor architecture</strong> routing queries across 6 specialized workflows: 12-section paper summarizer, 9-attribute multi-paper comparison matrices, and automated research gap discovery across literature.</li>
+          <li>Built a high-precision conversational Q&amp;A engine featuring strict contextual prompt grounding, returning verifiable answers backed by exact source page numbers and citation confidence metrics to eliminate hallucinations.</li>
+          <li>Implemented quantitative telemetry and evaluation dashboards using <strong>Plotly</strong> and <strong>Pandas</strong> to measure retrieval faithfulness.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="item-block">
+        <div class="item-header">
+          <span class="item-title">Intelligent Resume Validation &amp; ATS Compatibility Engine</span>
+          <span class="item-meta">MCA Mini Project | 2025 – 2026</span>
+        </div>
+        <div class="item-tech">Technologies: Python, Streamlit, NLP, Keyword Matching, Regex, Web Scraping Integration</div>
+        <ul class="bullet-list">
+          <li>Developed an automated ATS screening application evaluating resumes against industry job requirements, formatting standards, and keyword frequency, scoring an <strong>82% benchmark alignment score</strong>.</li>
+          <li>Engineered semantic skill-gap extraction algorithms that pinpoint missing technical proficiencies and dynamically generate targeted learning roadmaps and live job search queries for LinkedIn and Naukri.</li>
+        </ul>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="item-block">
+        <div class="item-header">
+          <span class="item-title">WELFake: Fake News Detection via Linguistic Features &amp; CNN</span>
+          <span class="item-meta">BCA Capstone Project | 2023 – 2024</span>
+        </div>
+        <div class="item-tech">Technologies: Python, TensorFlow/Keras, Convolutional Neural Networks (CNN), Scikit-Learn, Pandas</div>
+        <ul class="bullet-list">
+          <li>Designed a two-phase machine learning classification benchmark system combining linguistic style feature extraction with dense word embeddings fed into <strong>Convolutional Neural Network (CNN)</strong> architectures.</li>
+          <li>Trained, validated, and evaluated models on the WELFake benchmark corpus of <strong>72,000+ news articles</strong>, achieving <strong>93% classification accuracy</strong> with high precision and recall against deception benchmarks.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Certifications & Credentials -->
+    <section>
+      <div class="section-title">Certifications &amp; Professional Credentials</div>
+      <div class="cert-grid">
+        <div class="cert-item">
+          <span class="cert-bullet">•</span>
+          <div><strong>Python Full Stack Development</strong> — IBM &amp; Netcraftz <em>(ID: CEPYTIIN)</em></div>
+        </div>
+        <div class="cert-item">
+          <span class="cert-bullet">•</span>
+          <div><strong>Cloud Computing (12-Week NPTEL)</strong> — IIT Kharagpur <em>(Score: 53%)</em></div>
+        </div>
+        <div class="cert-item">
+          <span class="cert-bullet">•</span>
+          <div><strong>Hands-on with AWS for IT Professionals</strong> — AWS &amp; Coursera</div>
+        </div>
+        <div class="cert-item">
+          <span class="cert-bullet">•</span>
+          <div><strong>Data Science with Python</strong> — Great Learning <em>(ID: PCFZLUIU)</em></div>
+        </div>
+      </div>
+      <div class="cert-item" style="margin-top: 2px;">
+        <span class="cert-bullet">•</span>
+        <div><strong>Corporate Communication &amp; Email Etiquette</strong> — TCS iON, Tata Consultancy Services <em>(ID: 66785-23883209-1016)</em></div>
+      </div>
+    </section>
+
+    <!-- Athletic Rigor & Additional Information -->
+    <section>
+      <div class="section-title">Athletic Rigor &amp; Additional Information</div>
+      <div class="additional-info">
+        <div><strong>University-Level Wrestler:</strong> Competed at the inter-collegiate and university championship level representing Seshadripuram athletic contingents; cultivated extreme mental resilience, high physical discipline, and composed problem-solving under pressure.</div>
+        <div style="margin-top: 1.5px;"><strong>Languages:</strong> English (Professional Working Proficiency), Tamil (Native / Fluent), Kannada (Fluent).</div>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
