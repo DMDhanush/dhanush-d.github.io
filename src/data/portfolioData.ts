@@ -26,8 +26,8 @@ export const personalInfo: PersonalInfo = {
   ],
   availability: 'Open for Full-time Roles in Bengaluru / Hybrid',
   resumePdfUrl: './assets/resume/D_Dhanush_Resume.pdf',
-  profilePhoto: './assets/profile/dhanush_profile.jpeg',
-  portraitPhoto: './assets/profile/dhanush_portrait.jpg'
+  profilePhoto: './assets/profile/dhanush_profile.jpeg?v=2',
+  portraitPhoto: './assets/profile/dhanush_portrait.jpg?v=2'
 };
 
 export const skillsList: SkillItem[] = [
