@@ -484,8 +484,9 @@ export const flagshipCaseStudy: CaseStudy = {
     }
   ],
   localSetupGuide: [
-    '# Clone or navigate to the project directory',
-    'cd C:\\Users\\dhanu\\researchai',
+    '# Clone repository and enter directory',
+    'git clone https://github.com/DMDhanush/researchai.git',
+    'cd researchai',
     '# Create and activate python virtual environment',
     'python -m venv venv',
     'venv\\Scripts\\activate',
