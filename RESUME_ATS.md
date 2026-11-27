@@ -1,6 +1,6 @@
 # D DHANUSH
 **Bengaluru, Karnataka, India** | **+91 8884262043** | **dhanushd627@gmail.com**  
-**LinkedIn:** [linkedin.com/in/dhanush-d](https://linkedin.com/in/dhanush-d) | **GitHub:** [github.com/DMDhanush](https://github.com/DMDhanush) | **Portfolio:** [dmdhanush.github.io/dhanush-d.github.io](https://dmdhanush.github.io/dhanush-d.github.io)
+**LinkedIn:** [linkedin.com/in/dhanush-d-04503b306](https://www.linkedin.com/in/dhanush-d-04503b306/) | **GitHub:** [github.com/DMDhanush](https://github.com/DMDhanush) | **Portfolio:** [dmdhanush.github.io/dhanush-d.github.io](https://dmdhanush.github.io/dhanush-d.github.io/)
 
 ---
 
